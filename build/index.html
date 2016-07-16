@@ -11,20 +11,20 @@
 <body>
   <div class="site-wrapper">
     <header class="page-header">
-      <div class="main-nav"></div>
-        <figure class="main-nav__logo">
-          <img class="main-nav__image" width="149" height="30" src="img/logo-affimob-main.png" alt="Affimob - сеть партнерских программ">
-        </figure>
-
+      <div class="main-nav main-nav--top">
         <nav class="main-nav__menu">
+          <figure class="main-nav__logo">
+            <img class="main-nav__image" width="149" height="30" src="img/logo-affimob-main.png" alt="Affimob - сеть партнерских программ">
+          </figure>
+
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              Офферы
-              <i>97</i>
+            <li class="main-nav__item main-nav__item--offer">
+              <span class="main-nav__item-text">Офферы</span>
+              <i class="main-nav__counter">97</i>
             </li>
             <li class="main-nav__item">Блог</li>
-            <li class="main-nav__item">Информация
-              <ul class="sub-menu">
+            <li class="main-nav__item main-nav__item--header">Информация
+              <ul class="sub-menu sub-menu--header">
                 <li class="sub-manu__list">FAQ</li>
                 <li class="sub-manu__list">Новости</li>
                 <li class="sub-manu__list">О компании</li>
@@ -37,7 +37,7 @@
         <ul class="user-block__list">
           <li class="user-block__item">Регистрация</li>
           <li class="user-block__item">Вход</li>
-          <li class="user-block__item">Контакты</li>
+          <li class="user-block__item user-block__item--contacts  user-block__item--active">Контакты</li>
         </ul>
       </div>
 
@@ -75,10 +75,11 @@
         </div>
 
         <div class="news-block__all-news-row">
-          <a class="news-block__all-news-link">Все новости</a>
+          <a class="news-block__all-news-link" href="#">Все новости</a>
         </div>
       </article>
     </header>
+
     <main class="container">
       <div class="offers-row">
         <div class="offers-row__menu">
@@ -88,22 +89,22 @@
 
           <ul class="offers-row__filters">
             <li class="offers-row__filter">
-              Образование
+              <span class="offers-row__filter-text">Образование</span>
               <i class="offers-row__counter">24</i>
             </li>
 
             <li class="offers-row__filter">
-              Микрозаймы
+              <span class="offers-row__filter-text">Микрозаймы</span>
               <i class="offers-row__counter">48</i>
             </li>
 
             <li class="offers-row__filter">
-              Юридические услуги
+              <span class="offers-row__filter-text">Юридические услуги</span>
               <i class="offers-row__counter">12</i>
             </li>
 
             <li class="offers-row__filter">
-              Все офферы
+              <span class="offers-row__filter-text">Все офферы</span>
               <i class="offers-row__counter">97</i>
             </li>
           </ul>
@@ -111,87 +112,187 @@
 
         <div class="offers-row__item-group">
           <div class="offers-row__item">
-            <img class="offers-row__image" src="img/logo_abbyy.png" width="108" height="44" alt="" >
+            <div class="offers-row__image-group">
+              <img class="offers-row__image" src="img/logo_abbyy.png" width="108" height="44" alt="" >
+            </div>
             <div class="offers-row__item-content">
-              <span class="offers-row__item-header">Treewords</span>
+              <a class="offers-row__item-header" href="#">Treewords</a>
               <span class="offers-row__item-description">Подтвержденная заявка: 40</span>
-              <span class="offers-row__item-category">Образование, услуги</span>
+              <div class="__item-categories">
+                <a class="offers-row__item-category" href="#">Образование,</a>
+                <a class="offers-row__item-category" href="#">услуги</a>
+              </div>
             </div>
           </div>
 
           <div class="offers-row__item">
-            <img class="offers-row__image" src="img/logo_gett.png" width="75" height="39" alt="" >
+            <div class="offers-row__image-group">
+              <img class="offers-row__image offers-row__image--second" src="img/logo_gett.png" width="75" height="39" alt="" >
+            </div>
             <div class="offers-row__item-content">
-              <span class="offers-row__item-header">Kredito 24</span>
+              <a class="offers-row__item-header" href="#">Kredito 24</a>
               <span class="offers-row__item-description">Выданный заем: 1690</span>
-              <span class="offers-row__item-category">Микрозаймы</span>
+              <div class="__item-categories">
+                <a class="offers-row__item-category" href="#">Микрозаймы</a>
+              </div>
             </div>
           </div>
 
           <div class="offers-row__item">
-            <img class="offers-row__image" src="img/logo_natyveX.png" width="99" height="42" alt="" >
+            <div class="offers-row__image-group">
+              <img class="offers-row__image offers-row__image--third" src="img/logo_natyveX.png" width="99" height="42" alt="" >
+            </div>
             <div class="offers-row__item-content">
-              <span class="offers-row__item-header">Квартиная уборка</span>
+              <a class="offers-row__item-header" href="#">Квартиная уборка</a>
               <span class="offers-row__item-description">Подтвержденная заявка: 80</span>
-              <span class="offers-row__item-category">Услуги</span>
+              <div class="__item-categories">
+                <a class="offers-row__item-category" href="#">Услуги</a>
+              </div>
             </div>
           </div>
 
           <div class="offers-row__item">
-            <img class="offers-row__image" src="img/logo_natyveX.png" width="99" height="42" alt="" >
+            <div class="offers-row__image-group">
+              <img class="offers-row__image offers-row__image--fourth" src="img/logo_natyveX.png" width="99" height="42" alt="" >
+            </div>
             <div class="offers-row__item-content">
-              <span class="offers-row__item-header">Treewords</span>
+              <a class="offers-row__item-header" href="#">Treewords</a>
               <span class="offers-row__item-description">Подтвержденная заявка: 40</span>
-              <span class="offers-row__item-category">Образование, услуги</span>
+              <div class="__item-categories">
+                <a class="offers-row__item-category" href="#">Образование,</a>
+                <a class="offers-row__item-category" href="#">услуги</a>
+              </div>
             </div>
           </div>
 
           <div class="offers-row__item">
-            <img class="offers-row__image" src="img/logo_abbyy.png" width="108" height="44" alt="" >
+            <div class="offers-row__image-group">
+              <img class="offers-row__image offers-row__image--fifth" src="img/logo_abbyy.png" width="108" height="44" alt="" >
+            </div>
             <div class="offers-row__item-content">
-              <span class="offers-row__item-header">Kredito 24</span>
+              <a class="offers-row__item-header" href="#">Kredito 24</a>
               <span class="offers-row__item-description">Выданный заем: 1690</span>
-              <span class="offers-row__item-category">Микрозаймы</span>
+              <div class="__item-categories">
+                <a class="offers-row__item-category" href="#">Микрозаймы</a>
+              </div>
             </div>
           </div>
 
           <div class="offers-row__item">
-            <img class="offers-row__image" src="img/logo_gett.png" width="75" height="39" alt="" >
+            <div class="offers-row__image-group">
+              <img class="offers-row__image offers-row__image--sixth" src="img/logo_gett.png" width="75" height="39" alt="" >
+            </div>
             <div class="offers-row__item-content">
-              <span class="offers-row__item-header">Квартиная уборка</span>
+              <a class="offers-row__item-header" href="#">Квартиная уборка</a>
               <span class="offers-row__item-description">Подтвержденная заявка: 80</span>
-              <span class="offers-row__item-category">Услуги</span>
+              <div class="__item-categories">
+                <a class="offers-row__item-category" href="#">Услуги</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="web-master-row">
-        <h2 class="web-master-row__header">
-          Веб-мастеру
-        </h2>
+        <h2 class="web-master-row__header">Веб-мастеру</h2>
+
         <div class="call-to-action">
+          <img class="call-to-action__image" src="img/visual.png" alt="" width="295" height="295">
           <ul class="call-to-action__list">
-            <li class="call-to-action__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li class="call-to-action__item">Nunc pellentesque, risus varius tempor aliquam, erat neque
+            <li class="call-to-action__item call-to-action__item--first">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="call-to-action__item call-to-action__item--second">Nunc pellentesque, risus varius tempor aliquam, erat neque
             incidunt lectus, sit amet vestibulum urna nisl ac sem</li>
-            <li class="call-to-action__item">Donec dolor mi, luctus ut venenatis mattis, scelerisque vel sapien</li>
-            <li class="call-to-action__item">Proin et ex velit. Morbi laoreet magna nec feugiat mattis.</li>
+            <li class="call-to-action__item call-to-action__item--third">Donec dolor mi, luctus ut venenatis mattis, scelerisque vel sapien</li>
+            <li class="call-to-action__item call-to-action__item--fourth">Proin et ex velit. Morbi laoreet magna nec feugiat mattis.</li>
           </ul>
 
-          <a class="call-to-action__btn btn" href="" ></a>
+          <a class="call-to-action__btn btn" href="#" >Зарегистрироваться и начать зарабатывать</a>
         </div>
 
         <section class="faq">
           <h1 class="faq__header">Вопрос из FAQ</h1>
           <span class="faq__question">Есть ли у вас холд?</span>
           <span class="faq__answer">Да. 7 дней с момента заказа выплаты. Для проверенных партнеров холда нет.</span>
-          <a class="faq__link" href="" >Узнать больше</a>
+          <a class="faq__link" href="#" >Узнать больше</a>
         </section>
+      </div>
 
+      <div class="questions-row">
+        <div class="questions-row__tabs">
+          <div class="question-row__tab">
+            <input type="text" class="question-row__input">
+            <label for="" class="question-row__label">Как тут зарабатывать?</label>
+            <div class="question-row__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque, risus varius tempor aliquam, erat neque tincidunt lectus, sit amet vestibulum urna nisl ac sem. Donec dolor mi, luctus ut venenatis mattis, scelerisque vel sapien. Proin et ex velit. Morbi laoreet magna nec feugiat mattis. Donec vitae commodo nulla, vitae porttitor massa. Suspendisse potenti. Fusce fringilla egestas urna ut mollis. Fusce mollis purus eget ante semper, at pulvinar neque fermentum.</div>
+          </div>
 
+          <div class="question-row__tab">
+            <input type="text" class="question-row__input">
+            <label for="" class="question-row__label">Как происходят выплаты?</label>
+            <div class="question-row__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque, risus varius tempor aliquam, erat neque tincidunt lectus, sit amet vestibulum urna nisl ac sem. Donec dolor mi, luctus ut venenatis mattis, scelerisque vel sapien. Proin et ex velit. Morbi laoreet magna nec feugiat mattis. Donec vitae commodo nulla, vitae porttitor massa. Suspendisse potenti. Fusce fringilla egestas urna ut mollis. Fusce mollis purus eget ante semper, at pulvinar neque fermentum.</div>
+          </div>
+
+          <div class="question-row__tab">
+            <input type="text" class="question-row__input">
+            <label for="" class="question-row__label">Есть ли реферальная программа?</label>
+            <div class="question-row__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque, risus varius tempor aliquam, erat neque tincidunt lectus, sit amet vestibulum urna nisl ac sem. Donec dolor mi, luctus ut venenatis mattis, scelerisque vel sapien. Proin et ex velit. Morbi laoreet magna nec feugiat mattis. Donec vitae commodo nulla, vitae porttitor massa. Suspendisse potenti. Fusce fringilla egestas urna ut mollis. Fusce mollis purus eget ante semper, at pulvinar neque fermentum.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="advertiser-row">
+        <h2 class="advertiser-row__header">Рекламодателю</h2>
+        <div class="call-to-action">
+          <ul class="call-to-action__list">
+            <li class="call-to-action__item call-to-action__item--first">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="call-to-action__item call-to-action__item--second">Nunc pellentesque, risus varius tempor aliquam, erat neque
+            incidunt lectus, sit amet vestibulum urna nisl ac sem</li>
+            <li class="call-to-action__item call-to-action__item--third">Donec dolor mi, luctus ut venenatis mattis, scelerisque vel sapien</li>
+            <li class="call-to-action__item call-to-action__item--fourth">Proin et ex velit. Morbi laoreet magna nec feugiat mattis.</li>
+          </ul>
+
+          <a class="call-to-action__btn btn" href="#" >Зарегистрироваться и начать продвижение</a>
+        </div>
       </div>
     </main>
+    <footer class="main-footer">
+      <div class="main-nav">
+        <nav class="main-nav__menu">
+          <figure class="main-nav__logo">
+            <img class="main-nav__image" width="149" height="30" src="img/logo-affimob-main.png" alt="Affimob - сеть партнерских программ">
+          </figure>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--offer">
+              <span class="main-nav__item-text">Офферы</span>
+              <i class="main-nav__counter">97</i>
+            </li>
+            <li class="main-nav__item">Блог</li>
+            <li class="main-nav__item main-nav__item--footer">Информация
+              <ul class="sub-menu sub-menu--footer">
+                <li class="sub-manu__list">FAQ</li>
+                <li class="sub-manu__list">Новости</li>
+                <li class="sub-manu__list">О компании</li>
+                <li class="sub-manu__list">Правила сети</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="user-block__list">
+          <li class="user-block__item">Регистрация</li>
+          <li class="user-block__item">Вход</li>
+          <li class="user-block__item user-block__item--contacts  user-block__item--active">Контакты</li>
+        </ul>
+      </div>
+
+      <div class="footer__bottom-row">
+        <div class="footer__copyright">
+          <span class="footer__company">ООО "Аффимоб"</span>
+          <a href="" class="footer__email">info@affimob.com</a>
+        </div>
+        <span class="footer__registered">Все права защищены 2004-2016</span>
+      </div>
+    </footer>
   </div>
 
 
